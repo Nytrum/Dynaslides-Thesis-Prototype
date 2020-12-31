@@ -1,0 +1,329 @@
+.hidden {
+	display: none;
+}
+
+pre {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	width: 100%;
+	height: 690px;
+	position: relative;
+	background-color: #EFEFEF;
+	text-align: center;
+	overflow: hidden;
+}
+
+section div.block {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+section div.content {
+	display: flex;
+	flex-direction: column;
+	/*
+	justify-content: center;
+	align-items: flex-end;
+	*/
+}
+
+section div.v-up {
+	justify-content: flex-start;
+}
+section div.v-mid {
+	justify-content: center;
+}
+section div.v-down {
+	justify-content: flex-end;
+}
+
+section div.h-left {
+	align-items: flex-start;
+	text-align: left;
+}
+section div.h-mid {
+	align-items: center;
+	text-align: center;
+}
+section div.h-right {
+	align-items: flex-end;
+	text-align: right;
+}
+
+section div.up-left {
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+}
+section div.up-center {
+	justify-content: flex-start;
+	align-items: center;
+}
+section div.up-right {
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+section div.center-left {
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+}
+section div.center-center {
+	justify-content: center;
+	align-items: center;
+}
+section div.center-right {
+	justify-content: center;
+	align-items: flex-end;
+}
+section div.down-left {
+	justify-content: flex-end;
+	align-items: flex-start;
+	text-align: left;
+}
+section div.down-center {
+	justify-content: flex-end;
+	align-items: center;
+}
+section div.down-right {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+section span.text-block {
+	/* display: inline-block; */
+}
+
+li.slide {
+	margin: 10px 0px;
+	font-size: 18px;
+}
+
+div.footer {
+	text-align: center;
+}
+
+section table {
+	position: absolute;
+}
+
+section table, section th, section td {
+	border: 1px solid black;
+}
+
+section svg.drawing {
+	position: absolute;
+	overflow: visible;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#pptx-thumb {
+	min-width: 240px;
+	height: 180px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 45%;
+    overflow: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.result-container {
+    width: 100%;
+	height: 40%;
+	transition: 0.3s;
+	overflow: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.result-container:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.result-container table {
+    width: 100%;
+    position: initial;
+    border: none;
+}
+
+.result-container table tbody tr:nth-child(odd) {
+    background: #FFF;
+}
+
+.result-container table tbody tr:nth-child(even) {
+    background: #CCC;
+}
+
+.result-container table tbody tr td, .result-container table tbody tr td th {
+    width: 100%;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.client-panel{
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) translateY(70%);
+    z-index: 10000;
+    background-color: white;
+    border-top-right-radius: 5px;
+    box-shadow: 0 6px 6px rgba(16,27,30,0.4);
+	border-top-left-radius: 5px;
+	transition: transform 0.1s ease-in;
+}
+
+.client-panel-open{
+    transform: translateX(-50%) translateY(0%);
+}
+
+.client-panel .panel-button{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 5px;
+	cursor: pointer;
+}
+
+.client-panel .panel-button::before {
+	content: "\25B2";
+}
+.client-panel .panel-button::after {
+	content: "\25B2";
+}
+.client-panel:hover .panel-button::before {
+	content: "\25BC";
+}
+.client-panel:hover .panel-button::after {
+	content: "\25BC";
+}
+
+.client-panel .panel-icon{
+	text-align: center;
+	width:50px; 
+	height:50px;
+	margin: 10px;
+	opacity: 0.5;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
+
+.client-panel .panel-icon:hover{
+	opacity: 1;
+}
+
+.disabled
+{
+	cursor: not-allowed;
+	pointer-events: none;
+
+	/*Button disabled - CSS color class*/
+	color: #c0c0c0;
+	background-color: #ffffff;
+}
+
+.red-svg{
+	fill: red;
+}
+
+.green-svg{
+	fill: green;
+}
+.voting-button{
+	display: inline-block;
+    padding: 2em 4em;
+    margin: 1em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5em;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+	display: none;
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+	padding: 10px;
+	background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 84%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 80px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+	background-color: #ddd;
+	outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+	background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+	background-color: red;
+  }
+
+  .client-chat-open{
+	  display: block;
+  }

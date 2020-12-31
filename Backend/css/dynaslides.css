@@ -1,0 +1,123 @@
+body{background: #2f2f2f;}
+
+.custom-btn{
+    display:inline-block;
+    padding:1.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:700;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.data-files-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-insertion-btn{
+    display:inline-block;
+    padding: 0.5em 1em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:700;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.data-insertion-btn:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.data-insertion-btn label{
+    margin: 0;
+}
+
+.custom-btn:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+.custom-btn label{
+    margin: 0;
+}
+
+.or-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#c5c5c5
+}
+.wh100{
+    width:100%;
+    height: 100%;
+}
+
+
+@media all and (max-width:30em){
+    .custom-btn{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+#animated-background{
+    position: absolute;
+}
+
+.dyna-header{
+    padding: 5em 0;
+}
+.dyna-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7em;
+    text-align: center;
+    color: white;
+}
+.dyna-slogan{
+    text-align: center;
+    color: #ffffff60;
+}
+.div-inline{
+    display: inline-block;
+}
+.download-container{
+
+}
+
+.progress-wrapper {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    margin: 50px 0;
+}
+  
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}

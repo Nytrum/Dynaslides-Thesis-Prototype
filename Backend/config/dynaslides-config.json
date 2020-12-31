@@ -1,0 +1,9 @@
+{
+    "audience_interaction_command": "ai_on",
+    "audience_interaction_master_io_secret_key": "16002475234355710626",
+    "audience_interaction_master_io_id": "dcd4f20c31a21b79",
+    "audience_interaction_client_io_secret_key": "16002475102725602689",
+    "audience_interaction_client_io_id": "4a4bfbb6bf2a6fb1",
+    "audience_interaction_io_url": "http://localhost:1948/",
+    "audience_interaction_exp_time": 2 
+}
