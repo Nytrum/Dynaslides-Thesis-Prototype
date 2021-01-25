@@ -74,7 +74,7 @@ To use the plugins, the presenter must first change the powerpoint presentation 
 
 After that, the user can use the following available plugins:
 
- + **Live Website** - Insert %%liveviz("\<URL\>")%% on the **alt text** description of the text box.
+ + **Live Website** - Insert %%website%%("\<URL\>")%% on the **alt text** description of the text box.
 
  + **Live coding** - Insert %%livecode%% on the **alt text** description of the text box. This plugin does not have any additional settings.
 
