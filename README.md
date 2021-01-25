@@ -73,6 +73,9 @@ To use the plugins, the presenter must first change the powerpoint presentation 
  + Right-click on the text box and choose edit **alt text**;
 
 After that, the user can use the following available plugins:
+
+ + **Live Website** - Insert %%liveviz("\<URL\>")%% on the **alt text** description of the text box.
+
  + **Live coding** - Insert %%livecode%% on the **alt text** description of the text box. This plugin does not have any additional settings.
 
  + **Live visualization** - Insert  %%liveviz("\<Filename\>.\<extension\>")%% on the **alt text** description of the text box, where \<Filename\> is the name of the data file and \<extension\> is the format of that said file. For example, "file.csv". Before translating the file, the presenter also must insert the respective data files on the website version's additional settings or give the additional option in the command-line version. Otherwise, the plugin will not work.
